@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+
+:root{
+--primaryColor: hsl(13, 65%, 51%);
+--primaryColorHover: hsl(13, 83%, 51%);
+--textColorPrimary: hsl(13, 3%, 35%);
+--textColorVermillion: hsl(13, 65%, 51%);
+--textColorWhite: hsl(0, 0%, 99%);
+--bgColorWhite: hsl(0, 0%, 99%);
+--bgColorVermillion: hsl(13, 65%, 51%);
+--btnPrimarColorVermillion: hsl(13, 65%, 51%);
+--btnSecondaryColor: hsl(137,77%,43%);
+
+--font-family-1: 'Poppins', sans-serif;
+--font-family-2: 'Monserrat', sans-serif;
+--h1: 3rem;
+--h2: 1.5rem;
+--h3: 1.3rem;
+--h4: 1.1rem;
+--h5: 1rem;
+--h6: 0.9rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+.logo{
+    width: 200px!important;
+    border-radius: 4px;
+    background: #ececec;
+    padding: 1rem 1rem;
+
+}
+
+.header-sub{
+    color: var(--textColorPrimary);
+    padding-top: 1rem;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+.btn{
+    background: hsl(13, 65%, 51%);
+    border: none;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    background: hsl(13, 65%, 51%);
+    border: none;
+}
+
+
+
+
+
+
+
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 14px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+     .btn{
+        background: hsl(13, 65%, 51%);
+        border: none;
+    }
+    
+    .btn:hover, .btn:focus, .btn:active{
+        background: hsl(13, 65%, 51%);
+        border: none;
+    }
+
+}

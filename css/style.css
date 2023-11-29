@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+
+:root{
+--primaryColor: hsl(13, 65%, 51%);
+--primaryColorHover: hsl(13, 83%, 51%);
+--textColorPrimary: hsl(13, 3%, 35%);
+--textColorVermillion: hsl(13, 65%, 51%);
+--textColorWhite: hsl(0, 0%, 99%);
+--bgColorWhite: hsl(0, 0%, 99%);
+--bgColorVermillion: hsl(13, 65%, 51%);
+--btnPrimarColorVermillion: hsl(13, 65%, 51%);
+--btnSecondaryColor: hsl(137,77%,43%);
+
+--font-family-1: 'Poppins', sans-serif;
+--font-family-2: 'Monserrat', sans-serif;
+--h1: 3rem;
+--h2: 1.5rem;
+--h3: 1.3rem;
+--h4: 1.1rem;
+--h5: 1rem;
+--h6: 0.9rem;
+
+
+--borderColor: hsl(0, 4%, 80%);
+--borderColorHover: hsl(13, 65%, 51%);
+
+--cardShadow: hsla(13,65%,51%,0.1);
+}
+
+
+
+/* ----- CSS Start ----- */
+
+ html{
+    overflow-x: hidden;
+    font-size: 80%;
+ }
+ 
+ 
+ body{
+    background-color: var(--light-bg);
+ }
+
+
+
+  ion-icon{
+    font-size: 24px;
+  }
+
+
+  .main-btn{
+    background: var(--btnPrimarColorVermillion);
+    font-family: var(--font-family-1);
+    font-size: var(--h5);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--textColorWhite);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+
+  .main-btn:hover, .main-btn:active, .main-btn:focus{
+    box-shadow: 0 0 5px hsl(13, 65%, 51%);
+    background-color: var(--primaryColorHover);
+  }
+
+
+
+  /* -----Navbar -----*/
+
+  .navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .navbar .container-fluid .nav-icons{
+    margin-right: 40px;
+    color: var(--primaryColor);
+  }
+
+  .nav-item{
+    font-family: var(--font-family-1);
+    font-size: var(--h3);
+    font-weight: 400;
+  }
+
+  .nav-link{
+    color: var(--textColorPrimary)!important;
+  }
+
+  .nav-link:hover{
+    color: var(--primaryColorHover)!important;
+    font-weight: 500!important;
+  }
+  
+  .nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  }
+
+
+
+
+
+  /* ----- Hero Section ----- */
+
+  .c-item{
+    height: 460px;
+    font-family: var(--font-family-2);
+  }
+
+  .c-img{
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+  }
+
+  .carousel-inner .c-item .carousel-caption{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+  }
+
+  .carousel-inner .c-item .carousel-caption .hero-btn{
+    background: var(--btnPrimarColorVermillion);
+    font-family: var(--font-family-1);
+    font-size: var(--h3);
+    font-weight: 500;
+    width: 350px;
+    height: 48px;
+    text-decoration: none;
+    color: var(--textColorWhite);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 30px;
+    padding: 20px;
+    transition: all 0.2s ease;
+  }
+
+
+  .carousel-inner .c-item .carousel-caption .hero-btn:hover, .hero-btn:active{
+    box-shadow: 0 0 20px hsl(13, 65%, 51%);
+    background-color: var(--primaryColorHover);
+  }
+
+
+  .navbar .container-fluid .nav-icons .signup-btn{
+
+    background: var(--btnSecondaryColor);
+    font-family: var(--font-family-1);
+    font-size: var(--h3);
+    font-weight: 500;
+    width: max-content;
+    height: max-content;
+    text-decoration: none;
+    color: var(--textColorWhite);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: all 0.2s ease;
+    
+  }
+
+  .navbar .container-fluid .nav-icons .signup-btn:hover, .signup-btn:active{
+    box-shadow: 0 0 10px hsl(147, 91%, 46%);
+    background-color: var(--btnSecondaryColor);
+  }
+
+
+  .collapse .navbar-nav .signup-btn{
+    background: var(--btnPrimarColorVermillion);
+    font-family: var(--font-family-1);
+    font-size: var(--h3);
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--textColorWhite);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+
+
+
+
+
+
+  /* ----- Explore Restaurants -----  */
+
+   .explore-restaurants{
+    padding: 4rem 0 8rem;
+   }
+
+  .explore-restaurants .title, .p{
+    font-family: var(--font-family-1);
+    padding: 2.5rem;
+  }
+
+  .explore-restaurants .title{
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    font-size: var(--h1);
+    color: var(--textColorVermillion);
+  }
+
+  .explore-restaurants .subtitle{
+    font-family: var(--font-family-1);
+    font-weight: 400;
+    font-size: var(--h3);
+    color: var(--textColorPrimary);
+  }
+
+  .explore-restaurants .card{
+    border: 1.5;
+    border-color: var(--borderColor);
+    border-radius: 8px;
+    background-color: var(--bgColorWhite);
+    transition: all 0.2s ease;
+  }
+
+  .explore-restaurants .card:hover{
+    filter: drop-shadow(0px 8px 32px var(--cardShadow));
+    border-color: var(--borderColorHover);
+  }
+
+  .explore-restaurants .card .img-fluid{
+    height: 240px;
+    border: 0;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+
+
+  .card .restaurant-category {
+    position: relative;
+    font-family: var(--font-family-2);
+    font-size: var(--h5);
+    font-weight: 300;
+    color: var(--primaryColor);
+    background: var(--bgColorWhite);
+    border-radius: 4px;
+    width: max-content;
+    height: max-content;
+    top: 0;
+  }
+
+
+  .explore-restaurants .card .card-body .card-btn{
+    border: 0;
+    background-color: var(--bgColorVermillion);
+    color: var(--textColorWhite);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-family: var(--font-family-2);
+    font-size: var(--h4);
+    font-weight: 400;
+  }
+
+
+  
+  @media (min-width: 1200px) {
+.navbar .container-fluid, .container-fluid-lg, .container-fluid-md, .container-fluid-sm, .container-fluid-xl {
+    max-width: 1920px;
+}
+}
+
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+
+    .carousel-inner .c-item .carousel-caption{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .collapse .navbar-nav .signup{
+      display: none;
+    }
+
+    }
+
+
+    @media (max-width: 992px) {
+
+      .navbar .container-fluid .nav-icons .signup-btn{
+        display: none;
+      }
+
+    }
+
+
